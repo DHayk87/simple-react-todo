@@ -1,0 +1,83 @@
+.add-task {
+    display: flex;
+    gap: 10px;
+    height: 40px;
+}
+.add-task input {
+    flex: 1px;
+    padding-left: 10px;
+}
+.add-task button {
+    padding: 0 20px;
+}
+
+.todo-wrapper {
+    max-width: 800px;
+    margin: 5vh auto;
+    height: 90vh;
+    display: grid;
+    background-color: steelblue;
+    border-radius: 20px;
+    padding: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    place-content: start;
+    gap: 20px;
+}
+
+.toDoItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    background-image: linear-gradient(#286ca3, transparent, #81aed2);
+    box-shadow: 0 0 5px #232323;
+}
+.toDoItem button {
+    padding: 0 8px;
+}
+.currentTaskData {
+    flex: 1;
+    position: relative;
+    color: #fff;
+}
+.currentTaskData::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    translate: 0 -50%;
+    height: 4px;
+    width: 0%;
+    background-image: linear-gradient(-45deg, #000000, #00008b, #add8e6);
+    transition: 0.5s;
+}
+.toDoItem :is(p, [type="text"]) {
+    flex-grow: 1;
+}
+
+.toDos {
+    align-self: flex-start;
+    overflow: auto;
+    display: grid;
+    gap: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #81aed2 #286ca3;
+}
+
+.finished::before {
+    width: 100%;
+}
+
+.error {
+    outline: solid red;
+}
+.taskFooter {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #fff;
+}
