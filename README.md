@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React To-Do App
 
 This is a simple To-Do application built with React and Vite. It allows users to add, edit, mark as complete, and delete tasks.
@@ -45,3 +46,6 @@ There are three key pieces of state that control the application's behavior:
 3.  Start the development server: `npm run dev`
 
 This simple usage of `useState` is a powerful pattern for managing the state of small to medium-sized React applications.
+=======
+# simple-react-todo
+>>>>>>> f2408effe5249d61ec2f963039ad6f5b85511b6e
